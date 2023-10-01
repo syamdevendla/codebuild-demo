@@ -15,4 +15,4 @@ phases:
     commands:
       - echo Completed build at `date`
       - echo Pushing the Docker image...
-      - docker push 463748998377.dkr.ecr.us-east-1.amazonaws.com/$IMAGE_REPO_NAME:$$CODEBUILD_BUILD_NUMBER
+      - docker push 463748998377.dkr.ecr.us-east-1.amazonaws.com/coworking-checkin:0.0.1
