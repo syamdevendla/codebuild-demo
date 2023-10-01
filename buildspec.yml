@@ -9,10 +9,10 @@ phases:
     commands:
       - echo Starting build at `date`
       - echo Building the Docker image...
-      - docker build -t coworking-checkin:0.0.1 .
-      - docker tag coworking-checkin:0.0.1 463748998377.dkr.ecr.us-east-1.amazonaws.com/coworking-checkin:0.0.1
+      - docker build -t coworking-checkin:0.0.2 .
+      - docker tag coworking-checkin:0.0.2 463748998377.dkr.ecr.us-east-1.amazonaws.com/coworking-checkin:0.0.2
   post_build:
     commands:
       - echo Completed build at `date`
       - echo Pushing the Docker image...
-      - docker push 463748998377.dkr.ecr.us-east-1.amazonaws.com/coworking-checkin:0.0.1
+      - docker push 463748998377.dkr.ecr.us-east-1.amazonaws.com/coworking-checkin:0.0.2
